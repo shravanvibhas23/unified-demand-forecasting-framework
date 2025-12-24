@@ -2,112 +2,81 @@
 Unified framework for evaluating time-series demand forecasting models across stable, fast, and intermittent patterns using statistical, ML, and AutoML approaches with rolling validation and MASE.
 
 
-Unified Evaluation Framework for Demand Forecasting
+Unified Demand Forecasting Evaluation Framework
 
-This project implements a unified evaluation framework for time-series demand forecasting, designed to compare statistical, machine learning, and AutoML models across different demand patterns using realistic validation.
+A conference-validated, production-oriented time-series forecasting framework that benchmarks statistical, machine learning, and AutoML models across stable, fast, and intermittent demand patterns using realistic evaluation.
 
-The framework was developed as part of a conference research study and focuses on practical, real-world forecasting scenarios.
+📌 Built with real-world forecasting constraints in mind
+📌 Focused on model selection, not just model accuracy
 
-🔍 Problem Overview
+🎯 Why This Project Matters (Recruiter View)
 
-In domains like supply chain, retail, and financial services, demand patterns vary significantly:
+In real business scenarios, no single forecasting model works best for all demand types.
+This project demonstrates:
 
-Stable demand
+Strong time-series fundamentals
 
-Fast-moving demand
+Practical model evaluation & benchmarking
 
-Slow or intermittent demand
+Ability to combine research + engineering
 
-A single forecasting model does not perform best across all scenarios.
-This project answers:
+Decision-driven forecasting, not trial-and-error modeling
 
-Which forecasting model works best for which demand pattern?
+🔍 What This Framework Does
 
-🧠 Key Features
+Classifies demand using ADI & CV²
 
-Demand classification using ADI & CV²
+Applies rolling-origin (walk-forward) validation
 
-Rolling-origin (walk-forward) evaluation
+Evaluates Statistical, ML, and AutoML models
 
-Fair comparison of Statistical, ML, and AutoML models
+Uses MASE for scale-independent accuracy
 
-Robust accuracy measurement using MASE
+Automatically selects the best model per demand category
 
-Automatic best-model selection per demand category
+⚙️ Models Benchmarked
 
-⚙️ Models Implemented
-Statistical Models
+Statistical:
+ETS, ARIMA, SARIMA, Croston, SBA
 
-ETS (Holt-Winters)
-
-ARIMA
-
-SARIMA
-
-Croston
-
-SBA
-
-Machine Learning
-
+Machine Learning:
 XGBoost
 
-AutoML
+AutoML:
+AutoGluon, MLJAR, TPOT
 
-AutoGluon
-
-MLJAR
-
-TPOT
-
-📊 Final Results
-Overall Model Ranking
-Rank	Model	Accuracy
-1	ARIMA	75.9%
-2	AutoGluon	75.6%
-3	MLJAR	75.0%
-4	XGBoost	74.8%
-5	Croston	73.9%
+📊 Results Snapshot
+Overall Ranking
+Model	Accuracy
+ARIMA	75.9%
+AutoGluon	75.6%
+MLJAR	75.0%
 Best Model by Demand Type
-Demand Type	Best Model	Accuracy
+Demand	Best Model	Accuracy
 Fast	ARIMA	79.7%
 Stable	AutoGluon	75.8%
-Slow	ARIMA	74.4%
+Intermittent	ARIMA	74.4%
 
-Peak Accuracy: 75.9%
+📈 Key Insight:
+
+Model choice should be driven by demand behavior, not model complexity.
 
 🛠 Tech Stack
 
-Python
+Python, NumPy, Pandas
 
-NumPy, Pandas
-
-Statsmodels
-
-Scikit-learn
+Statsmodels, Scikit-learn
 
 XGBoost
 
 AutoGluon, TPOT, MLJAR
 
-Matplotlib, Seaborn
-
 🚀 How to Run
 pip install -r requirements.txt
 python forecasting_framework.py
 
-📌 Use Cases
 
-Demand forecasting & benchmarking
 
-Supply chain analytics
+Senior Python Developer (Analytics)
 
-Financial time-series modeling
-
-Intermittent demand analysis
-
-Model selection and evaluation
-
-📄 Research Context
-
-This framework was created and validated as part of a national conference presentation, combining academic rigor with industry-focused forecasting practices.
+Financial & Supply Chain Analytics Roles
